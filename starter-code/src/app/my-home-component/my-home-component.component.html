@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let oneMovie of movieList.movies">
+    <h3>ROOM {{oneMovie.room}}</h3>
+    <img src="{{oneMovie.poster}}" alt="poster">
+    <h3>{{oneMovie.title}}</h3>
+    <a [routerLink]="['/movie', oneMovie.id]">See Details</a>
+  </li>
+</ul>

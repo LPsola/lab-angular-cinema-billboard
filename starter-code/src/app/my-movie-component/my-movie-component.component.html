@@ -1,0 +1,68 @@
+<div class="movie-container">
+  <h3>ROOM {{movieInfo?.room}} :
+    <i>{{movieInfo?.title}}</i>
+  </h3>
+  <div class="movie-poster">
+    <img src="{{movieInfo?.poster}}" alt="poster">
+  </div>
+  <div class="movie-info">
+
+    <!-- GENRE -->
+    <div class="left">
+      <p>Genre</p>
+    </div>
+    <div class="right">
+      <p *ngFor="let oneGenre of movieInfo?.genre">{{oneGenre}}</p>
+    </div>
+
+    <!-- YEAR -->
+    <div class="left">
+      <p>Year</p>
+    </div>
+    <div class="right">
+      <p>{{movieInfo?.year}}</p>
+    </div>
+
+    <!-- DIRECTOR -->
+    <div class="left">
+      <p>Director</p>
+    </div>
+    <div class="right">
+      <p>{{movieInfo?.director}}</p>
+    </div>
+
+    <!-- ACTORS -->
+    <div class="left">
+      <p>Actors</p>
+    </div>
+    <div class="right">
+      <p *ngFor="let oneActor of movieInfo?.actors">{{oneActor}}</p>
+    </div>
+
+    <!-- SCHEDULE -->
+    <div class="left">
+      <p>Schedule</p>
+    </div>
+    <div class="right">
+      <p *ngFor="let oneHour of movieInfo?.hours">{{oneHour}}</p>
+    </div>
+
+    <!-- SYNOPSYS -->
+    <p>Synopsys</p>
+    <p>{{movieInfo?.synopsys}}</p>
+
+    <!-- HOME BUTTON -->
+    <a routerLink="/home">
+      <button>Home</button>
+    </a>
+  </div>
+
+</div>
+
+<!-- <ul>
+  <li>ID: {{contactInfo?.id}}</li>
+  <li>Phone: {{contactInfo?.phone}}</li>
+  <li>Mail: {{contactInfo?.email}}</li>
+</ul> -->
+
+<!-- <button (click)="confirmDelete()">Delete</button> -->

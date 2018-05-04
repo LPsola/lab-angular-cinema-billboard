@@ -1,0 +1,33 @@
+.movie-container {
+  margin: 10vh auto;
+  width: 90vw;
+  background-color: azure;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-container h3 {
+  position: absolute;
+  margin: 5vh 5vw;
+}
+
+.movie-poster img {
+  width: 20vw;
+  margin: 15vh 5vw;
+}
+
+.movie-info {
+  width: 50vw;
+  margin: 15vh 1vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left {
+  width: 8vw;
+  color: crimson;
+}
+.right {
+  width: 42vw;
+  color: fuchsia;
+}

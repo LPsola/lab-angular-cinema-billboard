@@ -1,0 +1,19 @@
+ul {
+  width: 85%;
+  margin: 10vh 6vw;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: aquamarine;
+  color: violet;
+}
+
+li {
+  width: 16vw;
+  list-style-type: none;
+}
+
+li img {
+  width: 15vw;
+  height: 60vh;
+}
